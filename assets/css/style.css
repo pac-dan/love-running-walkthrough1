@@ -98,7 +98,12 @@
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 
 }
 
-/* Media query: tablets and larger */
