@@ -32,6 +32,9 @@
      z-index: 99;
      width: 100%;
      box-shadow: 0 2px 2px #3a3a3a;
+     display: flex;
+     justify-content: space-between;
+     align-items: baseline;
  }
 
  header a {
@@ -52,6 +55,21 @@
  .active {
     border-bottom: 1px solid #3a3a3a;
  }
+
+ /* Navbar styles with dropdown toggle */
+
+ nav {
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
+
+
 
  /* Main Content */
  main {
