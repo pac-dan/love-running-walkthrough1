@@ -6,7 +6,8 @@
      margin: 0;
      box-sizing: border-box;
  }
-/* General styles */  
+
+ /* General styles */
  body {
      min-height: 100vh;
      display: flex;
@@ -16,7 +17,10 @@
      font-family: 'Lato', sans-serif;
  }
 
- h1, h2, h3 {
+
+ h1,
+ h2,
+ h3 {
      font-family: 'Oswald', sans-serif;
      text-transform: uppercase;
      letter-spacing: 2px;
@@ -44,7 +48,7 @@
 
  #menu {
      font-size: 110%;
-     letter-spacing: 2px;
+     letter-spacing: 4px;
      list-style: none;
  }
 
@@ -84,7 +88,7 @@
 
  /* Main Content */
  main {
-    
+
      /* Make main element stretch to take up any surplus space */
      flex: 1 0 auto;
      margin-top: 47px;
@@ -92,97 +96,142 @@
 
  /* Hero Section */
 
-#hero { 
-    height: 600px;
-    width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
+ #hero {
+     height: 600px;
+     width: 100%;
+     background: url("../images/hero-image.webp") no-repeat center center/cover;
+ }
+
+ #cover-text {
+     text-align: center;
+     padding: 40px 20px;
+     background-color: rgba(241, 109, 107, .7);
+     font-size: 130%;
+     position: absolute;
+     bottom: 30px;
+     width: 80%;
+     min-height: 200px;
+     padding-top: 40px;
+     padding-left: 10px;
+
+
+ }
+
+ #cover-text>h2,
+ #cover-text>h3 {
+     color: #ffffff;
+ }
+
+ /* Reasons Section */
+
+ #reasons {
+     width: 90%;
+     margin: 20px auto;
+ }
+
+ #reasons>h2 {
+     margin-bottom: 20px;
+     text-align: center;
+     font-size: 280%;
+ }
+
+ #benefits-physical>div,
+ #benefits-mental>div {
+     line-height: 20px;
+     margin-bottom: 20px;
+ }
+
+ #benefits p {
+     padding: 0 20px;
+ }
+
+ #benefits hr {
+     border-top: 1px solid #3a3a3a;
+     margin: 5px 0;
+ }
+
+ #circle-cover-bg {
+     background: url(../images/reasons-image.webp) no-repeat center center/cover;
+     height: 90vw;
+     width: 90vw;
+     margin-bottom: 20px;
+     /* Make square image a circle */
+     border-radius: 50%;
+     max-width: 300px;
+     max-height: 300px;
 }
 
-#cover-text {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: rgba(241, 109, 107, .7);
-    font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-
-    
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#cover-text > h2, #cover-text > h3 {
-    color: #ffffff;
-} 
 
  /* Footer */
 
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
+ #social-networks {
+     text-align: center;
+     padding: 20px 0;
+     display: flex;
+     justify-content: space-evenly;
+     list-style: none;
+ }
 
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
+ #social-networks i {
+     font-size: 160%;
+     padding: 5%;
+     color: #3a3a3a;
 
-}
+ }
 
-/* Media Query: tablets and larger (768px and up) */
+ /* Media Query: tablets and larger (768px and up) */
 
-@media screen and (min-width: 768px) {
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
+ @media screen and (min-width: 768px) {
 
-    #menu {
-        display: flex;
-    }
+     /* Header */
+     nav {
+         display: block;
+         position: relative;
+         box-shadow: none;
+         width: fit-content;
+         padding-right: 1rem;
+     }
 
-    #menu > li {
-        padding-left: 1rem;
-    }
+     #menu {
+         display: flex;
+     }
 
-    .nav-toggle-label {
-        display: none;
-    }
+     #menu>li {
+         padding-left: 1rem;
+     }
 
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
- 
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
-    }
+     .nav-toggle-label {
+         display: none;
+     }
 
-    /* Hero image */
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
-}
+     #logo {
+         font-size: 280%;
+         line-height: 75px;
+         margin: 0 0.5rem;
+     }
 
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover{
-        border-bottom: 1px solid #3a3a3a;
-    }
-}
+     /* Main content */
+     main {
+         /* Push main content down to accommodate larger header */
+         margin-top: 79px;
+     }
 
+     /* Hero image */
+     #cover-text {
+         width: 300px;
+         right: 50px;
+     }
+ }
 
-    
+ /* Large devices (laptops and desktops, 992px and up) */
+ @media screen and (min-width: 992px) {
+     #menu a:hover {
+         border-bottom: 1px solid #3a3a3a;
+     }
+ }
